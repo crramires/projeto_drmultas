@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { logo1, logo2, logo3, logo4 } from '../../Imagens/index'
 import "react-accessible-accordion/dist/fancy-example.css";
 const axios = require("axios");
 
@@ -11,6 +11,10 @@ export const About = (param) => {
   const [data, setData] = useState([]);
 
   const [isLoading, setIsLoading] = useState(true);
+
+
+  
+
 
   useEffect(() => {
     handleGet();
@@ -40,7 +44,10 @@ export const About = (param) => {
   } else {
     return (
       <>
-        <div>imagem</div>
+        <div>
+          imagens
+          
+        </div>
         <button onClick={() => param.history.goBack()}>{`< Voltar`}</button>
         <div
           style={{

@@ -56,8 +56,8 @@ export const Dropdown = () => {
     return (
       <>
         <div> imagem </div>
-
-        <Accordion allowZeroExpanded style={{ width: "940px" }}>
+        <div style= {{display:"flex", flexDirection:"column", alignItems:"center" }}>
+        <Accordion allowZeroExpanded style={{ width: "940px", border:"none"}}>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton
@@ -116,6 +116,7 @@ export const Dropdown = () => {
             ))}
           </AccordionItem>
         </Accordion>
+        </div>
       </>
     );
   }
