@@ -44,9 +44,16 @@ export const About = (param) => {
   } else {
     return (
       <>
-        <div>
-          imagens
-          
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}><img src="../Dropdown/logo.png" /></div>
+
+        <div style={{display:"flex", backgroundColor:"#F4F4F4", minWidth:"360px", width:"1200px", justifyContent:"center", alignItems:"center"}}> 
+          <div>
+            {logo2}
+          </div> 
+          <div  className="margin" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            {logo3}  
+            {logo4}  
+          </div> 
         </div>
         <button onClick={() => param.history.goBack()}>{`< Voltar`}</button>
         <div

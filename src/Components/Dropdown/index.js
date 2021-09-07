@@ -7,7 +7,10 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+
 import "react-accessible-accordion/dist/fancy-example.css";
+import { logo2, logo3, logo4 } from "../Imagens";
+
 const axios = require("axios");
 
 export const Dropdown = () => {
@@ -55,9 +58,21 @@ export const Dropdown = () => {
   } else {
     return (
       <>
-        <div> imagem </div>
-        <div style= {{display:"flex", flexDirection:"column", alignItems:"center" }}>
-        <Accordion allowZeroExpanded style={{ width: "940px", border:"none"}}>
+
+        <div style= {{display:"flex", flexDirection:"column", alignItems:"center", width:"100%"}}>
+        <div><img src="logo.png" /></div>
+
+        <div style={{display:"flex", backgroundColor:"#F4F4F4", minWidth:"360px", width:"1200px", justifyContent:"center", alignItems:"center"}}> 
+          <div>
+            {logo2}
+          </div> 
+          <div  className="margin" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            {logo3}  
+            {logo4}  
+          </div> 
+        </div>
+
+         <Accordion allowZeroExpanded style={{ width: "940px", border:"none"}}>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton

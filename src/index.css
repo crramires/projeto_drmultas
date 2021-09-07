@@ -20,14 +20,3 @@ code {
 
 }
 
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
-
-  .container {
-    max-width: 600px;
-  }
-
-}
